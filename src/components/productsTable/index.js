@@ -34,9 +34,12 @@ const ProductTable = () => {
 
   
     const productsList = useSelector((state) => state.products.productsList);
+    const searchText = useDispatch((state) => state.products.searchText)
     const handlePopupClose = () => (setSelectedProduct(""))
-      
-    console.log(productsList)
+    
+
+    console.log(searchText)
+
     const onClickNo = () => {
         const newObj = {
             ...selectedProduct,

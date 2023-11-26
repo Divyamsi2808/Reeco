@@ -1,4 +1,4 @@
-// YourComponent.js
+
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {  fetchProducts} from '../../features/products/productSlice';
@@ -10,7 +10,7 @@ import ProductsSection from '../ProductsSection';
 
 import {HomepageContainer, ContentContainer} from "./styled"
 
-const YourComponent = () => {
+const HomePage = () => {
     const dispatch = useDispatch();
     const status = useSelector((state) => state.products.status);
     
@@ -35,4 +35,4 @@ const YourComponent = () => {
   );
 };
 
-export default YourComponent;
+export default HomePage;

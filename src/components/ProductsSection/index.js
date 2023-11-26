@@ -1,5 +1,7 @@
-import { useState } from "react"
+import {  useState } from "react"
 import { SlPrinter } from "react-icons/sl";
+import { useDispatch } from 'react-redux';
+import { searchFilter } from "../../features/products/productSlice";
 
 import AddProduct from "../AddProductForm"
 import ProductTable from "../productsTable";
@@ -15,9 +17,17 @@ import {ProductsContainer,
 
 
 const ProductsSection = () => {
+    const dispatch = useDispatch()
+    
 
     const [searchText, onChangeSearchText] = useState("")
 
+    const onChangeSearch = (event) => {
+        event.preventDefault()
+        const text = event.target.value
+        dispatch(searchFilter(text))
+        onChangeSearchText(text)
+    }
     
 
     const renderSerachBar = () => (
@@ -26,7 +36,7 @@ const ProductsSection = () => {
             type = "text"
             placeholder="Serch..."
             value={searchText}
-            onChange={(e) => (onChangeSearchText(() => e.target.value))}
+            onChange={onChangeSearch}
             />
             <SearchIcon/>
         </SearchContainer>

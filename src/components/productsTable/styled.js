@@ -22,11 +22,10 @@ box-shadow: 0px 0px 1px 1px #a6ada8;
 text-align: center;
 `;
 
-export const ProductNameContainer = styled(Td)`
+export const ProductNameContainer = styled.div`
 display: flex;
 align-items: center;
 width: 100%;
-box-shadow: none;
 `
 
 export const ProductImg = styled.img`
@@ -35,17 +34,16 @@ margin-right: 12px;
 `
 
 
-export const StatusContainer = styled(Td)`
+export const StatusContainer = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
-justify-content: space-between;
-box-shadow: none;
-width: 150px;
+width: 100%;
 `
 
 export const StatusText = styled.p`
 padding: 4px 10px 6px 10px;
+margin-left: 10px;
 border-radius: 10px;
 color: #ffffff;
 font-family: Roboto;

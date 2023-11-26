@@ -35,7 +35,14 @@ const ProductTable = () => {
 
   
     const productsList = useSelector((state) => state.products.productsList);
+    const searchText = useSelector((state) => (state.products.searchText))
     const handlePopupClose = () => (setSelectedProduct(""))
+
+    const getFilterdProducts = () => (
+        productsList.filter((product) => (
+            product.name.toLowerCase().includes(searchText.toLowerCase())
+        ))
+    )
 
     const onClickNo = () => {
         const newObj = {
@@ -83,7 +90,7 @@ const ProductTable = () => {
           </Tr>
         </thead>
         <tbody>
-          {productsList.map((product) => (
+          {getFilterdProducts().map((product) => (
             <Tr key={product.id}>
             <Td>
                 <ProductNameContainer>

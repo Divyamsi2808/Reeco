@@ -2,6 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 const initialState = {
   productsList: [],
+  searchText: "",
   status: "idle",
   error: null,
 };
@@ -28,11 +29,8 @@ export const productSlice = createSlice({
         }
       })
     },
-    filterProducts: (state, action) => {
-      const searchTerm = action.payload.toLowerCase();
-      state.productsList = state.productsList.filter((product) => {
-        return product.name.toLowerCase().includes(searchTerm);
-      });
+    searchTextUpdate: (state, action) => {
+      state.searchText = action.payload
   },
   },
   extraReducers: (builder) => {
@@ -51,6 +49,6 @@ export const productSlice = createSlice({
   },
 });
 
-export const { addProduct, updateProductStatus, filterProducts } = productSlice.actions;
+export const { addProduct, updateProductStatus, searchTextUpdate } = productSlice.actions;
 
 export default productSlice.reducer;

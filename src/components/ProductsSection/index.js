@@ -1,6 +1,6 @@
 import {  useState, useEffect } from "react"
 import { useDispatch, useSelector } from 'react-redux';
-import {fetchProducts,filterProducts } from "../../features/products/productSlice";
+import {fetchProducts,searchTextUpdate } from "../../features/products/productSlice";
 import { SlPrinter } from "react-icons/sl";
 
 import AddProduct from "../AddProductForm"
@@ -35,7 +35,7 @@ const ProductsSection = () => {
     const onChangeSearch = (event) => {
         event.preventDefault()
         const text = event.target.value
-        dispatch(filterProducts(text));
+        dispatch(searchTextUpdate(text));
         onChangeSearchText(text)
     }
 

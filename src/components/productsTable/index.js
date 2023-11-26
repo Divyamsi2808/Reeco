@@ -10,8 +10,9 @@ import {Table,
     Tr,
     Th,
     Td,
-    ProductNameTd,
-    BrandTd,StatusTd,
+    ProductNameContainer,
+    ProductImg,
+    StatusContainer,
     PopupOverlay,
     PopupContent,
     PopupTopSection,
@@ -34,11 +35,7 @@ const ProductTable = () => {
 
   
     const productsList = useSelector((state) => state.products.productsList);
-    const searchText = useDispatch((state) => state.products.searchText)
     const handlePopupClose = () => (setSelectedProduct(""))
-    
-
-    console.log(searchText)
 
     const onClickNo = () => {
         const newObj = {
@@ -88,24 +85,35 @@ const ProductTable = () => {
         <tbody>
           {productsList.map((product) => (
             <Tr key={product.id}>
-            <ProductNameTd>{product.name}</ProductNameTd>
-            <BrandTd>{product.brand}</BrandTd>
+            <Td>
+                <ProductNameContainer>
+                <ProductImg
+                src={product.image}
+                alt = {product.name}
+                />
+                {product.name}
+                </ProductNameContainer>
+            </Td>
+            <Td>{product.brand}</Td>
             <Td>${product.price}</Td>
             <Td>{product.quantity}</Td>
             <Td>${product.price * product.quantity}</Td>
-            <StatusTd  >
-                <StatusText status = {product.status}>
-                {product.status}
-                </StatusText>
-                <ApprovalButtonsContainer>
-                    <ApprovalButton  type = "button" status = {product.status} onClick={() => onClickRight(product)}>
-                        <SiVerizon/>
-                    </ApprovalButton>
-                    <RejectButton  type = "button" status = {product.status} onClick={() => onClickCross(product)}>
-                        <RxCross2/>
-                    </RejectButton>
-                </ApprovalButtonsContainer>
-            </StatusTd>
+            <Td  >
+                <StatusContainer>
+                    <StatusText status = {product.status}>
+                    {product.status}
+                    </StatusText>
+                    <ApprovalButtonsContainer>
+                        <ApprovalButton  type = "button" status = {product.status} onClick={() => onClickRight(product)}>
+                            <SiVerizon/>
+                        </ApprovalButton>
+                        <RejectButton  type = "button" status = {product.status} onClick={() => onClickCross(product)}>
+                            <RxCross2/>
+                        </RejectButton>
+                    </ApprovalButtonsContainer>
+                </StatusContainer>
+               
+            </Td>
         </Tr>
           ))}
         </tbody>

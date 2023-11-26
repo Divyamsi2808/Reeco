@@ -13,28 +13,35 @@ export const Th = styled.th`
   padding: 8px;
   box-shadow: 0px 0px 1px 1px #7b747d;
   font-size: 14px;
-  width: 100px;
 `;
 
 export const Td = styled.td`
-box-shadow: 0px 0px 1px 0px #7b747d;
 padding: 8px 6px;
 width: 60px;
+box-shadow: 0px 0px 1px 1px #a6ada8;
+text-align: center;
 `;
 
-export const ProductNameTd = styled(Td)`
-width: 200px;
+export const ProductNameContainer = styled(Td)`
+display: flex;
+align-items: center;
+width: 100%;
+box-shadow: none;
 `
 
-export const BrandTd = styled(Td)`
-width: 100px;
+export const ProductImg = styled.img`
+width: 50px;
+margin-right: 12px;
 `
 
-export const StatusTd = styled(Td)`
+
+export const StatusContainer = styled(Td)`
 display: flex;
 align-items: center;
 justify-content: space-between;
-width: 100%;
+justify-content: space-between;
+box-shadow: none;
+width: 150px;
 `
 
 export const StatusText = styled.p`

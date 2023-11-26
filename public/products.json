@@ -1,94 +1,105 @@
 {
     "products": [
-        {
-            "id":1,
-            "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
-            "name": "Chicken Breast Fillets, Boneless matuu maMarinated 6 Ounce Raw, Invivid",
-            "brand": "Hormel Black Labelmany",
-            "price": 60,
-            "quantity": 6,
-            "status": "",
-            "reason": ""
-        },
-        {
-            "id":2,
-            "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
-            "name": "Chicken Breast Fillets, Boneless matuu maMarinated 6 Ounce Raw, Invivid",
-            "brand": "Hormel Black Labelmany",
-            "price": 80,
-            "quantity": 12,
-            "status": "",
-            "reason": ""
-        },
-        {
-            "id":3,
-            "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
-            "name": "Chicken Breast Fillets, Boneless matuu maMarinated 6 Ounce Raw, Invivid",
-            "brand": "Hormel Black Labelmany",
-            "price": 40,
-            "quantity": 30,
-            "status": "",
-            "reason": ""
-        },
-        {
-            "id":4,
-            "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
-            "name": "Chicken Breast Fillets, Boneless matuu maMarinated 6 Ounce Raw, Invivid",
-            "brand": "Hormel Black Labelmany",
-            "price": 20,
-            "quantity": 9,
-            "status": "",
-            "reason": ""
-        },
-        {
-            "id":5,
-            "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
-            "name": "Chicken Breast Fillets, Boneless matuu maMarinated 6 Ounce Raw, Invivid",
-            "brand": "Hormel Black Labelmany",
-            "price": 100,
-            "quantity": 70,
-            "status": "",
-            "reason": ""
-        },
-        {
-            "id":6,
-            "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
-            "name": "Chicken Breast Fillets, Boneless matuu maMarinated 6 Ounce Raw, Invivid",
-            "brand": "Hormel Black Labelmany",
-            "price": 16,
-            "quantity": 30,
-            "status": "",
-            "reason": ""
-        },
-        {
-            "id":7,
-            "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
-            "name": "Chicken Breast Fillets, Boneless matuu maMarinated 6 Ounce Raw, Invivid",
-            "brand": "Hormel Black Labelmany",
-            "price": 18,
-            "quantity": 6,
-            "status": "",
-            "reason": ""
-        },
-        {
-            "id":8,
-            "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
-            "name": "Chicken Breast Fillets, Boneless matuu maMarinated 6 Ounce Raw, Invivid",
-            "brand": "Hormel Black Labelmany",
-            "price": 160,
-            "quantity": 16,
-            "status": "",
-            "reason": ""
-        },
-        {
-            "id":9,
-            "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
-            "name": "Chicken Breast Fillets, Boneless matuu maMarinated 6 Ounce Raw, Invivid",
-            "brand": "Hormel Black Labelmany",
-            "price": 260,
-            "quantity": 26,
-            "status": "",
-            "reason": ""
-        }
+      {
+        "id": 1,
+        "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
+        "name": "Chicken Breast Fillets, Boneless Marinated 6 Ounce Raw, Invivid",
+        "brand": "Hormel Black Labelmany",
+        "price": 60,
+        "quantity": 6,
+        "status": "",
+        "reason": ""
+      },
+      {
+        "id": 2,
+        "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
+        "name": "Vegetarian Dish Example 1",
+        "brand": "Vegetarian Brand",
+        "price": 50,
+        "quantity": 10,
+        "status": "",
+        "reason": ""
+      },
+      {
+        "id": 3,
+        "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
+        "name": "Salmon Steak, Freshly Caught and Grilled",
+        "brand": "Ocean's Bounty",
+        "price": 80,
+        "quantity": 8,
+        "status": "",
+        "reason": ""
+      },
+      {
+        "id": 4,
+        "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
+        "name": "Vegetarian Pasta with Pesto Sauce",
+        "brand": "Green Eats",
+        "price": 40,
+        "quantity": 20,
+        "status": "",
+        "reason": ""
+      },
+      {
+        "id": 5,
+        "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
+        "name": "Grilled Lamb Chops with Rosemary",
+        "brand": "Savory Delights",
+        "price": 100,
+        "quantity": 5,
+        "status": "",
+        "reason": ""
+      },
+      {
+        "id": 6,
+        "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
+        "name": "Vegetarian Sushi Rolls",
+        "brand": "Zen Bites",
+        "price": 16,
+        "quantity": 30,
+        "status": "",
+        "reason": ""
+      },
+      {
+        "id": 7,
+        "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
+        "name": "Spicy Chicken Wings, Hot and Crispy",
+        "brand": "Firehouse Flavors",
+        "price": 18,
+        "quantity": 6,
+        "status": "",
+        "reason": ""
+      },
+      {
+        "id": 8,
+        "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
+        "name": "Vegetarian Stir-Fried Tofu with Vegetables",
+        "brand": "Green Haven",
+        "price": 160,
+        "quantity": 16,
+        "status": "",
+        "reason": ""
+      },
+      {
+        "id": 9,
+        "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
+        "name": "Grilled Shrimp Skewers with Garlic Butter",
+        "brand": "Seafood Delight",
+        "price": 260,
+        "quantity": 26,
+        "status": "",
+        "reason": ""
+      },
+      {
+        "id": 10,
+        "image": "https://res.cloudinary.com/dxaugnoxj/image/upload/v1700803413/samples/Avocado_Hass_vhpfs6.jpg",
+        "name": "Vegetarian Chickpea Curry",
+        "brand": "Spice Haven",
+        "price": 30,
+        "quantity": 15,
+        "status": "",
+        "reason": ""
+      }
     ]
-}
+  }
+  

@@ -1,7 +1,7 @@
-import {  useState } from "react"
+import {  useState, useEffect } from "react"
+import { useDispatch, useSelector } from 'react-redux';
+import {fetchProducts,filterProducts } from "../../features/products/productSlice";
 import { SlPrinter } from "react-icons/sl";
-import { useDispatch } from 'react-redux';
-import { searchFilter } from "../../features/products/productSlice";
 
 import AddProduct from "../AddProductForm"
 import ProductTable from "../productsTable";
@@ -18,17 +18,26 @@ import {ProductsContainer,
 
 const ProductsSection = () => {
     const dispatch = useDispatch()
+    const status = useSelector((state) => state.products.status);
+    const [searchText, onChangeSearchText] = useState("")
+    
+  
+    useEffect(() => {
+      if (status === 'idle') {
+        const existingProducts = fetchProducts()
+        dispatch(existingProducts);
+      }
+    }, [dispatch, status]);
     
 
-    const [searchText, onChangeSearchText] = useState("")
+    
 
     const onChangeSearch = (event) => {
         event.preventDefault()
         const text = event.target.value
-        dispatch(searchFilter(text))
+        dispatch(filterProducts(text));
         onChangeSearchText(text)
     }
-    
 
     const renderSerachBar = () => (
         <SearchContainer>

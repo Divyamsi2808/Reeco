@@ -1,7 +1,5 @@
 
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import {  fetchProducts} from '../../features/products/productSlice';
+import React from 'react';
 
 import HeaderSection from '../headerSection';
 import OrderSection from '../orderSection';
@@ -10,21 +8,8 @@ import ProductsSection from '../ProductsSection';
 
 import {HomepageContainer, ContentContainer} from "./styled"
 
-const HomePage = () => {
-    const dispatch = useDispatch();
-    const status = useSelector((state) => state.products.status);
-    
-  
-    useEffect(() => {
-      if (status === 'idle') {
-        const existingProducts = fetchProducts()
-        dispatch(existingProducts);
-      }
-    }, [dispatch, status]);
-  
-
-  return (
-    <HomepageContainer>
+const HomePage = () => (
+  <HomepageContainer>
       <HeaderSection/>
       <OrderSection/>
       <ContentContainer>
@@ -32,7 +17,6 @@ const HomePage = () => {
         <ProductsSection/>
       </ContentContainer>
     </HomepageContainer>
-  );
-};
+)
 
 export default HomePage;
